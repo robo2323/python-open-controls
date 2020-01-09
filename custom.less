@@ -22,10 +22,11 @@
 
 body {
     font-family: "Roboto";
+    color: #5E4F63;
     p {
         font-size: 14px;
         line-height: 24px;
-letter-spacing: 0.014em;
+        letter-spacing: 0.014em;
     }
     h1 {
         font-family: "Magistral";
@@ -45,16 +46,27 @@ letter-spacing: 0.014em;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.12em;
-        text-transform: uppercase;
-        line-height: 16px;
-letter-spacing: 0.12em;
-text-transform: uppercase;
+    }
+
+    a {
+        color: #680CE9;
+        &:hover {
+            color: #4708A0;
+        }
     }
 }
-a {
-    color: #680CE9;
-    &:hover{
-       color: #4708A0;
+
+.document {
+    li {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+
+        letter-spacing: 0.65px;
+
+        color: #6C5B72;
     }
 }
 .wy-nav-side {
@@ -65,22 +77,23 @@ a {
 .wy-side-scroll {
     background-color: #FAF7FC;
     box-shadow: 0 0 6px rgba(37, 13, 46, 0.08);
-    a {
-        color: #381E42;
-        padding-left: 0;
-        padding-right: 0;
-
-    }
 
 }
 
 .wy-menu-vertical {
+ 
+
     a {
-        color: #381E42;
+        color: #381E42!important;
         margin-left: 45px;
         padding-left: 0;
         padding-right: 0;
+   font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
 
+    letter-spacing: 0.014em;
     }
 
     p.caption {
@@ -92,8 +105,52 @@ a {
         padding-left: 0;
         padding-right: 0;
     }
-
+     li,li.current,li.current>a{
+            background-color: #FAF7FC;
+            
+        }
+    li{
+            background-color: #FAF7FC;
+      
+    }
 }
+
+.wy-menu-vertical li.toctree-l1.current>a {
+    border: none;
+    color:#680CE9!important;
+    &:hover{
+            background-color: #FAF7FC;
+        font-weight: bold;
+    }
+}
+.wy-menu-vertical li.toctree-l1 a{
+            background-color: #FAF7FC!important;
+    
+    &:hover{
+            background-color: #FAF7FC;
+    color:#680CE9!important;
+    
+    }
+}
+.wy-menu-vertical li.toctree-l2 a{
+            background-color: #FAF7FC!important;
+    
+    &:hover{
+            background-color: #FAF7FC;
+    color:#680CE9!important;
+    
+    }
+}
+.wy-menu-vertical li.toctree-l3 a{
+            background-color: #FAF7FC!important;
+    
+    &:hover{
+            background-color: #FAF7FC;
+    color:#680CE9!important;
+    
+    }
+}
+
 
 .wy-side-nav-search {
 
@@ -103,7 +160,8 @@ a {
         font-family: "Magistral";
         font-weight: 300;
         font-size: 14px;
-        letter-spacing: 0.24em;margin-bottom: 0;
+        letter-spacing: 0.24em;
+        margin-bottom: 0;
 
     }
 
@@ -136,33 +194,89 @@ a {
     font-size: 14px;
     a {
         color: #AE9FB4;
+        &:hover {
+            color: #680CE9;
+        }
     }
 }
 
 .rst-content pre {
     background-color: #FAF7FC;
     border: 1px solid #D1C9D4;
-box-sizing: border-box;
+    box-sizing: border-box;
     font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
 
-letter-spacing: 0.014em;
+    letter-spacing: 0.014em;
 
-
-color: #5E4F63;
+    color: #5E4F63;
 }
 
-.btn
-    {
-        background: #ffffff!important;
-        color: #680CE9;
-
-
+.btn {
+    background: #ffffff!important;
+    color: #680CE9!important;
     border: 1px solid #680CE9;
-box-sizing: border-box;
-border-radius: 4px;
-    
+    box-sizing: border-box;
+    border-radius: 4px;
+    &:visited {
+        color: #680CE9!important;
+    }
+    &:hover {
+        color: #ffffff!important;
+        background-color: #680CE9!important;
+
+    }
+    &:active {
+        background: #4708A0!important;
+        color: #ffffff!important;
+
+    }
+    &:focus {
+        box-sizing: border-box;
+        outline: 2px solid rgba(104, 12, 233, 0.5);
+    }
+
+}
+.rst-content dl:not(.docutils) dt {
+    background: #FAF7FC;
+    border-top: 4px solid #680CE9;
+    color: #680CE9;
+
+    code {
+        font-family: Roboto;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.014em;
+        color: #5E4F63;
+
+    }
+
+}
+.rst-content dl:not(.docutils) dl dt {
+    background: #FAF7FC;
+    color: #5E4F63;
+    border-left: 3px solid #381E42;
+
+}
+
+.rst-content code {
+
+    font-family: Roboto;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: 0.014em;
+    border: 1px solid #D1C9D4;
+    box-sizing: border-box;
+
+    color: #5E4F63;
+    padding: 6px 8px;
 }
