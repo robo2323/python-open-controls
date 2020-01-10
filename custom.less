@@ -72,6 +72,7 @@ body {
 .wy-nav-side {
     background-color: #FAF7FC;
     box-shadow: 0 0 6px rgba(37, 13, 46, 0.08);
+
 }
 
 .wy-side-scroll {
@@ -81,20 +82,6 @@ body {
 }
 
 .wy-menu-vertical {
- 
-
-    a {
-        color: #381E42!important;
-        margin-left: 45px;
-        padding-left: 0;
-        padding-right: 0;
-   font-family: Roboto;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-
-    letter-spacing: 0.014em;
-    }
 
     p.caption {
         padding: 0;
@@ -105,63 +92,71 @@ body {
         padding-left: 0;
         padding-right: 0;
     }
-     li,li.current,li.current>a{
-            background-color: #FAF7FC;
-            
-        }
-    li{
-            background-color: #FAF7FC;
-      
-    }
+
 }
 
 .wy-menu-vertical li.toctree-l1.current>a {
     border: none;
-    color:#680CE9!important;
-    &:hover{
-            background-color: #FAF7FC;
+    color: #680CE9!important;
+    &:hover {
+        background-color: #FAF7FC;
         font-weight: bold;
     }
 }
-.wy-menu-vertical li.toctree-l1 a{
-            background-color: #FAF7FC!important;
-    
-    &:hover{
-            background-color: #FAF7FC;
-    color:#680CE9!important;
-    
-    }
-}
-.wy-menu-vertical li.toctree-l2 a{
-            background-color: #FAF7FC!important;
-    
-    &:hover{
-            background-color: #FAF7FC;
-    color:#680CE9!important;
-    
-    }
-}
-.wy-menu-vertical li.toctree-l3 a{
-            background-color: #FAF7FC!important;
-    
-    &:hover{
-            background-color: #FAF7FC;
-    color:#680CE9!important;
-    
-    }
-}
 
+.wy-menu-vertical li.toctree-l1 a {
+    background-color: #FAF7FC!important;
+    color: #381E42!important;
+    margin-left: 45px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.014em;
+    &:hover {
+        background-color: #FAF7FC;
+        color: #680CE9!important;
+
+    }
+}
+.wy-menu-vertical li.toctree-l2 a {
+    background-color: #FAF7FC!important;
+    &:hover {
+        background-color: #FAF7FC;
+        color: #680CE9!important;
+
+    }
+}
+.wy-menu-vertical li.toctree-l3 a {
+    background-color: #FAF7FC!important;
+    &:hover {
+        background-color: #FAF7FC;
+        color: #680CE9!important;
+
+    }
+}
 
 .wy-side-nav-search {
 
     background-color: #FAF7FC;
+
     padding: 60px 49px 0 40px;
     a {
-        font-family: "Magistral";
+        font-family: Magistral;
+        font-style: normal;
         font-weight: 300;
         font-size: 14px;
+        line-height: 14px;
+
         letter-spacing: 0.24em;
+        text-transform: uppercase;
+
+        color: #5E4F63;
         margin-bottom: 0;
+        padding: 0;
 
     }
 
@@ -279,4 +274,17 @@ body {
 
     color: #5E4F63;
     padding: 6px 8px;
+}
+.wy-menu-vertical li.current>a span.toctree-expand:before {
+    content: "\f077";
+    position: absolute;
+    right: 49px;
+    line-height: 24px;
+}
+.wy-menu-vertical li span.toctree-expand::before {
+    content: "\f078";
+    position: absolute;
+    right: 49px;
+    line-height: 24px;
+
 }
