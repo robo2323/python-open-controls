@@ -82,7 +82,10 @@ body {
 }
 
 .wy-menu-vertical {
+    li.current {
+        background-color: #FAF7FC!important;
 
+    }
     p.caption {
         padding: 0;
     }
@@ -96,6 +99,7 @@ body {
 }
 
 .wy-menu-vertical li.toctree-l1.current>a {
+
     border: none;
     color: #680CE9!important;
     &:hover {
@@ -165,7 +169,25 @@ body {
         box-sizing: border-box;
         border-radius: 4px;
         box-shadow: none;
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
 
+        letter-spacing: 0.65px;
+
+    }
+    a img.logo {
+        margin: 0;
+    }
+    &:after {
+        font-family: "FontAwesome";
+        content: "\f002";
+        position: absolute;
+        top: 130px;
+        left: 220px;
+        color: #AE9FB4;
     }
 }
 
@@ -216,6 +238,13 @@ body {
     border: 1px solid #680CE9;
     box-sizing: border-box;
     border-radius: 4px;
+    padding: 16px 8px;
+    width:100px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
     &:visited {
         color: #680CE9!important;
     }
@@ -235,10 +264,18 @@ body {
     }
 
 }
+.fa-arrow-circle-left:before{
+    content:"\f060";
+}
+.fa-arrow-circle-right:before{
+    content:"\f061";
+    
+}
 .rst-content dl:not(.docutils) dt {
     background: #FAF7FC;
     border-top: 4px solid #680CE9;
     color: #680CE9;
+    font-weight: 500;
 
     code {
         font-family: Roboto;
@@ -272,7 +309,7 @@ body {
     border: 1px solid #D1C9D4;
     box-sizing: border-box;
 
-    color: #5E4F63;
+    color: #5E4F63!important;
     padding: 6px 8px;
 }
 .wy-menu-vertical li.current>a span.toctree-expand:before {
@@ -287,4 +324,24 @@ body {
     right: 49px;
     line-height: 24px;
 
+}
+.icon-home:before {
+    content: none;
+}
+.wy-side-nav-search>a {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.wy-side-nav-search>a.icon img.logo {
+    margin: 0;
+    padding: 0;
+}
+.rst-versions .rst-current-version .fa-book {
+        color: #5E4F63;
+
+    &:before{
+color: #680CE9;
+
+    }
 }
