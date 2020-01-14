@@ -14,7 +14,7 @@ const changeH2Casing = () => {
 const changeBreadcrumbsSeparator = () => {
 	const breadCrumbsEl = document.querySelector(".wy-breadcrumbs");
 
-	[...bcs.children].forEach(el => {
+	[...breadCrumbsEl.children].forEach(el => {
 		const newHTML = el.innerHTML
 			.split(" ")
 			.map(v => (v === "»" ? ">" : v))
