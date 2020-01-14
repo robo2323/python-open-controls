@@ -3,7 +3,7 @@ const changeH2Casing = () => {
 	const h2elements = document.querySelectorAll("h2");
 	const h2ModuleTitles = [...h2elements].filter(element => {
 		const elText = element.innerText;
-		return moduleNameRegex.test(elText);
+		return !moduleNameRegex.test(elText);
 	});
 
 	h2ModuleTitles.forEach(
