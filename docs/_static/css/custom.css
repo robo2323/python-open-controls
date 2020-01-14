@@ -244,16 +244,16 @@ footer {
 .wy-breadcrumbs li a:hover {
 	color: #680ce9;
 }
-.rst-content pre {
+.rst-content div[class^='highlight'] pre {
 	background-color: #faf7fc;
 	border: 1px solid #d1c9d4;
 	box-sizing: border-box;
 	font-family: "Roboto Mono", monospace;
-	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0.014em;
+	padding: 8px 10px;
 	color: #5e4f63;
 }
 .btn {
@@ -343,6 +343,7 @@ footer {
 }
 .rst-content .highlighted {
 	background-color: #e8c9fc;
+	font-weight: normal;
 	color: #5e4f63;
 }
 #search-results .context {
