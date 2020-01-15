@@ -33,8 +33,20 @@ const fixNavHeader = () => {
 	navHeaderEl.appendChild(imageEl);
 };
 
+const styleMobileNavHeader = () => {
+	const navLogo = document.createElement("img");
+	navLogo.src = "_static/logo.png";
+	navLogo.className = "logo";
+	navLogo.alt = "Logo";
+
+	const headerLinkEl = document.querySelector(".wy-nav-top a");
+	headerLinkEl.innerHTML = "";
+	headerLinkEl.appendChild(navLogo);
+};
+
 document.addEventListener("DOMContentLoaded", () => {
 	changeH2Casing();
 	changeBreadcrumbsSeparator();
 	fixNavHeader();
+	styleMobileNavHeader();
 });
