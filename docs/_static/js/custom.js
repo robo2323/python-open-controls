@@ -1,5 +1,5 @@
 const changeH2Casing = () => {
-	const moduleNameRegex = /(qctrl)|\./gi;
+	const moduleNameRegex = /(qctrl)|\.|_/i;
 	const h2elements = document.querySelectorAll("h2, h3");
 	const h2ModuleTitles = [...h2elements].filter(element => {
 		const elText = element.innerText;
