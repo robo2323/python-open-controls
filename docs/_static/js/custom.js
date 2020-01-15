@@ -24,7 +24,17 @@ const changeBreadcrumbsSeparator = () => {
 	});
 };
 
+const fixNavHeader = () => {
+	const imageEl = document.querySelector(
+		".wy-side-nav-search > a.icon img.logo"
+	);
+	const navHeaderEl = document.querySelector(".wy-side-nav-search > a");
+	navHeaderEl.innerHTML = "";
+	navHeaderEl.appendChild(imageEl);
+};
+
 document.addEventListener("DOMContentLoaded", () => {
 	changeH2Casing();
 	changeBreadcrumbsSeparator();
+	fixNavHeader();
 });
