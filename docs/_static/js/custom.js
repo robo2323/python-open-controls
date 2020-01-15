@@ -1,13 +1,13 @@
 const changeH2Casing = () => {
 	const moduleNameRegex = /(qctrl)|\./gi;
-	const h2elements = document.querySelectorAll("h2");
+	const h2elements = document.querySelectorAll("h2, h3");
 	const h2ModuleTitles = [...h2elements].filter(element => {
 		const elText = element.innerText;
-		return !moduleNameRegex.test(elText);
+		return moduleNameRegex.test(elText);
 	});
 
 	h2ModuleTitles.forEach(
-		element => (element.style.textTransform = "uppercase")
+		element => (element.style.textTransform = "lowercase")
 	);
 };
 
