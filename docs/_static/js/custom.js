@@ -35,7 +35,7 @@ const fixNavHeader = () => {
 
 const styleMobileNavHeader = () => {
 	const navLogo = document.createElement("img");
-	navLogo.src = "_static/logo.png";
+	navLogo.src = "_static/logo.svg";
 	navLogo.className = "logo";
 	navLogo.alt = "Logo";
 
