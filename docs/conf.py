@@ -65,3 +65,6 @@ html_css_files = [
 html_js_files = [
     'js/custom.js',
 ]
+html_theme_options = {
+    'logo_only': True
+}
