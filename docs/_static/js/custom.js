@@ -1,3 +1,14 @@
+const loadCSS = () => {
+	console.log(window.location);
+
+	const head = document.getElementsByTagName("head")[0];
+	const link = document.createElement("link");
+	link.rel = "stylesheet";
+	link.type = "text/css";
+	link.href = "";
+	link.media = "all";
+	head.appendChild(link);
+};
 const changeH2Casing = () => {
 	const moduleNameRegex = /(qctrl)|\.|_/i;
 	const h2elements = document.querySelectorAll("h2, h3");
@@ -49,4 +60,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	changeBreadcrumbsSeparator();
 	fixNavHeader();
 	styleMobileNavHeader();
+	loadCSS();
 });
