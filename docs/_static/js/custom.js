@@ -57,7 +57,7 @@ const styleMobileNavHeader = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-	loadCSS();
+	// loadCSS();
 	changeH2Casing();
 	changeBreadcrumbsSeparator();
 	fixNavHeader();
