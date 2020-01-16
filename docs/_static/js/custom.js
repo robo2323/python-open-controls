@@ -1,14 +1,13 @@
-const loadCSS = () => {
-	console.log('!!!!!!!!!!!',window.location);
+console.log("!!!!!!!!!!!", window.location);
 
-	const head = document.getElementsByTagName("head")[0];
-	const link = document.createElement("link");
-	link.rel = "stylesheet";
-	link.type = "text/css";
-	link.href = "https://raw.githubusercontent.com/robo2323/python-open-controls/master/docs/_static/css/custom.css";
-	link.media = "all";
-	head.appendChild(link);
-};
+const head = document.getElementsByTagName("head")[0];
+const link = document.createElement("link");
+link.rel = "stylesheet";
+link.type = "text/css";
+link.href =
+	"https://raw.githubusercontent.com/robo2323/python-open-controls/master/docs/_static/css/custom.css";
+link.media = "all";
+head.appendChild(link);
 
 const changeH2Casing = () => {
 	const moduleNameRegex = /(qctrl)|\.|_/i;
@@ -61,5 +60,4 @@ document.addEventListener("DOMContentLoaded", () => {
 	changeBreadcrumbsSeparator();
 	fixNavHeader();
 	styleMobileNavHeader();
-	loadCSS();
 });
