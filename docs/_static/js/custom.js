@@ -5,7 +5,7 @@ const loadCSS = () => {
 	const link = document.createElement("link");
 	link.rel = "stylesheet";
 	link.type = "text/css";
-	link.href = "";
+	link.href = "https://raw.githubusercontent.com/robo2323/python-open-controls/master/docs/_static/css/custom.css";
 	link.media = "all";
 	head.appendChild(link);
 };
