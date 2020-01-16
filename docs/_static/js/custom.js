@@ -1,11 +1,14 @@
 const loadCSS = () => {
-	console.log("!!!!!!!!!!!", window.location);
+	// Check if we are at dev or prod docs url and load appropriate CSS
+	const cssUrl = /dev/i.test(window.location.hostname)
+		? "https://dev.docs.q-ctrl.com/assets/css/sphinx.css"
+		: "https://docs.q-ctrl.com/assets/css/sphinx.css";
 
 	const head = document.getElementsByTagName("head")[0];
 	const link = document.createElement("link");
 	link.rel = "stylesheet";
 	link.type = "text/css";
-	link.href = "_static/css/custom.css";
+	link.href = cssUrl;
 	link.media = "all";
 	head.appendChild(link);
 };
