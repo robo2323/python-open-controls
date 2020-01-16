@@ -1,5 +1,5 @@
 const loadCSS = () => {
-	console.log(window.location);
+	console.log('!!!!!!!!!!!',window.location);
 
 	const head = document.getElementsByTagName("head")[0];
 	const link = document.createElement("link");
@@ -9,6 +9,7 @@ const loadCSS = () => {
 	link.media = "all";
 	head.appendChild(link);
 };
+
 const changeH2Casing = () => {
 	const moduleNameRegex = /(qctrl)|\.|_/i;
 	const h2elements = document.querySelectorAll("h2, h3");
