@@ -14,9 +14,7 @@ var loadCSS = function loadCSS() {
 	link.href = cssUrl;
 	link.media = "all";
 
-	link.onload = () => {
-		head.appendChild(link);
-	};
+	head.appendChild(link);
 };
 
 var changeH2Casing = function changeH2Casing() {
