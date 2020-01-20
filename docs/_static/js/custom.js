@@ -65,5 +65,5 @@ document.addEventListener("DOMContentLoaded", function() {
 	changeBreadcrumbsSeparator();
 	fixNavHeader();
 	styleMobileNavHeader();
-	document.documentElement.style.display = "block";
+	document.body.style.display = "block";
 });
