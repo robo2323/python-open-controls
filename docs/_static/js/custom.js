@@ -1,6 +1,6 @@
 "use strict";
 
-document.documentElement.display = "none";
+document.documentElement.style.display = "none";
 
 var loadCSS = function loadCSS() {
 	// Check if we are at dev or prod docs url and load appropriate CSS
@@ -14,7 +14,9 @@ var loadCSS = function loadCSS() {
 	link.href = cssUrl;
 	link.media = "all";
 
-	head.appendChild(link);
+	link.onload = () => {
+		head.appendChild(link);
+	};
 };
 
 var changeH2Casing = function changeH2Casing() {
@@ -67,5 +69,5 @@ document.addEventListener("DOMContentLoaded", function() {
 	changeBreadcrumbsSeparator();
 	fixNavHeader();
 	styleMobileNavHeader();
-	document.documentElement.display = "none";
+	document.documentElement.style.display = "block";
 });
