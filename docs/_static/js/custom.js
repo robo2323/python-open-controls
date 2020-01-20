@@ -1,7 +1,5 @@
 "use strict";
 
-document.documentElement.style.display = "none";
-
 var loadCSS = function loadCSS() {
 	// Check if we are at dev or prod docs url and load appropriate CSS
 	var cssUrl = /dev/i.test(window.location.hostname)
