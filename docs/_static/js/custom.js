@@ -1,16 +1,24 @@
 "use strict";
 
+var linkCallback = function loadCSS() {
+	document.body.style.display = "block";
+};
+
 var loadCSS = function loadCSS() {
 	// Check if we are at dev or prod docs url and load appropriate CSS
 	var cssUrl = /dev/i.test(window.location.hostname)
 		? "https://cdn.jsdelivr.net/gh/robo2323/python-open-controls@master/docs/_static/css/custom.css"
 		: "https://cdn.jsdelivr.net/gh/robo2323/python-open-controls@master/docs/_static/css/custom.css";
+
 	var head = document.getElementsByTagName("head")[0];
 	var link = document.createElement("link");
 	link.rel = "stylesheet";
 	link.type = "text/css";
 	link.href = cssUrl;
 	link.media = "all";
+
+	link.onerror = linkCallback;
+	link.onload = linkCallback;
 
 	head.appendChild(link);
 };
@@ -65,5 +73,4 @@ document.addEventListener("DOMContentLoaded", function() {
 	changeBreadcrumbsSeparator();
 	fixNavHeader();
 	styleMobileNavHeader();
-	document.body.style.display = "block";
 });
