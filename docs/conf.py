@@ -59,8 +59,8 @@ html_theme = 'default'
 html_static_path = ['_static']
 html_logo = 'logo.svg'
 html_css_files = [
-    'css/blank.css'
+    'https://dev.docs.q-ctrl.com/assets/css/readthedocs.css'
 ]
 html_js_files = [
-    'js/custom.js'
+    'https://dev.docs.q-ctrl.com/assets/js/readthedocs.js'
 ]
