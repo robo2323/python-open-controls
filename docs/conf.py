@@ -59,8 +59,8 @@ html_theme = 'default'
 html_static_path = ['_static']
 html_logo = 'logo.svg'
 html_css_files = [
-    'https://dev.docs.q-ctrl.com/assets/css/sphinx.css'
+    'css/custom.css'
 ]
 html_js_files = [
-    'https://dev.docs.q-ctrl.com/assets/js/sphinx.js'
+    'js/custom.js'
 ]
